@@ -1,0 +1,30 @@
+@import compass/reset
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0 
+body
+  color: #eee
+  text-shadow: 0 -1px 0 rgba( 0, 0, 0, .6 )
+  font-family: 'Open Sans', sans-serif
+  font-size: 1.2em
+  line-height: 1.2em
+  overflow: hidden
+#viewport 
+  -webkit-perspective: 120
+  -moz-perspective: 120
+  -o-perspective: 120
+  perspective: 120 
+  height: 30em
+  // overflow: hidden
+  background: #333
+#world, #world div 
+  -webkit-transform-style: preserve-3d
+  -moz-transform-style: preserve-3d
+  -o-transform-style: preserve-3d
+.cloudLayer
+  margin-left: -128px
+  margin-top: -128px
+  -webkit-transition: opacity .5s ease-out
+  -moz-transition: opacity .5s ease-out
+  -o-transition: opacity .5s ease-out

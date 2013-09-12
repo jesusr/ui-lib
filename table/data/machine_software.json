@@ -1,0 +1,107 @@
+{
+	"node_type": "Software",
+	"for": "Machine",
+	"id": "codigodemaquina",
+	"version": null,
+	"sw": [	
+		{
+			"publisher":"Adobe",
+			"software":"Acrobat",
+			"version":"2011-08",
+			"cve_critical":"3",
+			"cve_warning":"6",
+			"cve": [
+				{
+					"node_type":"cve",
+					"modified":"2011-08-08T00:00:00.000-04:00",
+					"summary":"The prompt parsing in bash allows a local user to execute commands as another user by creating a directory with the name of the command to execute.",
+					"published":"1999-04-20T00:00:00.000-04:00", 
+					"cve":"CVE-1999-0491",
+					"cvss":"4.6"
+				},                                                                                                                                                                                                                                                                                             
+				{
+					"node_type":"cve",
+					"modified":"2011-08-08T00:00:00.000-04:00",
+					"summary":" 1   bash before 1.14.7, and  2   tcsh 6.05 allow local users to gain privileges via directory names that contain shell metacharacters  ` back-tick  , which can cause the commands enclosed in the directory name to be executed when the shell expands filenames using the     option in the PS1 variable.",
+					"published":"1996-09-13T00:00:00.000-04:00",
+					"cve":"CVE-1999-1383",
+					"cvss":"2.6"
+				},                                                                                                                                         
+				{
+					"node_type":"cve",
+					"modified":"2011-08-08T00:00:00.000-04:00",
+					"summary":"The prompt parsing in bash allows a local user to execute commands as another user by creating a directory with the name of the command to execute.",
+					"published":"1999-04-20T00:00:00.000-04:00",
+					"cve":"CVE-1999-0491",
+					"cvss":"0.0"
+				}
+			]
+		},
+		{
+			"publisher":"Adobe",
+			"software":"Acrobat",
+			"version":"2011-08",
+			"cve_critical":"3",
+			"cve_warning":"4",
+			"cve": [
+				{
+					"node_type":"cve",
+					"modified":"2011-08-08T00:00:00.000-04:00",
+					"summary":"The prompt parsing in bash allows a local user to execute commands as another user by creating a directory with the name of the command to execute.",
+					"published":"1999-04-20T00:00:00.000-04:00", 
+					"cve":"CVE-1999-0491",
+					"cvss":"4.6"
+				},                                                                                                                                                                                                                                                                                             
+				{
+					"node_type":"cve",
+					"modified":"2011-08-08T00:00:00.000-04:00",
+					"summary":" 1   bash before 1.14.7, and  2   tcsh 6.05 allow local users to gain privileges via directory names that contain shell metacharacters  ` back-tick  , which can cause the commands enclosed in the directory name to be executed when the shell expands filenames using the     option in the PS1 variable.",
+					"published":"1996-09-13T00:00:00.000-04:00",
+					"cve":"CVE-1999-1383",
+					"cvss":"2.6"
+				},                                                                                                                                         
+				{
+					"node_type":"cve",
+					"modified":"2011-08-08T00:00:00.000-04:00",
+					"summary":"The prompt parsing in bash allows a local user to execute commands as another user by creating a directory with the name of the command to execute.",
+					"published":"1999-04-20T00:00:00.000-04:00",
+					"cve":"CVE-1999-0491",
+					"cvss":"0.0"
+				}
+			]
+		},
+		{
+			"publisher":"Adobe",
+			"software":"Acrobat",
+			"version":"2011-08",
+			"cve_critical":"3",
+			"cve_warning":"0",
+			"cve": [
+				{
+					"node_type":"cve",
+					"modified":"2011-08-08T00:00:00.000-04:00",
+					"summary":"The prompt parsing in bash allows a local user to execute commands as another user by creating a directory with the name of the command to execute.",
+					"published":"1999-04-20T00:00:00.000-04:00", 
+					"cve":"CVE-1999-0491",
+					"cvss":"4.6"
+				},                                                                                                                                                                                                                                                                                             
+				{
+					"node_type":"cve",
+					"modified":"2011-08-08T00:00:00.000-04:00",
+					"summary":" 1   bash before 1.14.7, and  2   tcsh 6.05 allow local users to gain privileges via directory names that contain shell metacharacters  ` back-tick  , which can cause the commands enclosed in the directory name to be executed when the shell expands filenames using the     option in the PS1 variable.",
+					"published":"1996-09-13T00:00:00.000-04:00",
+					"cve":"CVE-1999-1383",
+					"cvss":"2.6"
+				},                                                                                                                                         
+				{
+					"node_type":"cve",
+					"modified":"2011-08-08T00:00:00.000-04:00",
+					"summary":"The prompt parsing in bash allows a local user to execute commands as another user by creating a directory with the name of the command to execute.",
+					"published":"1999-04-20T00:00:00.000-04:00",
+					"cve":"CVE-1999-0491",
+					"cvss":"0.0"
+				}
+			]
+		}
+	]  
+}

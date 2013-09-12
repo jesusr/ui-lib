@@ -1,0 +1,181 @@
+@import "var"
+@import "compass"
+@import "buttons"
+.table
+  +tencol
+  margin-bottom: 1em
+  margin: 2em 0
+  padding: 1em
+  padding-right: 0
+  h3
+    font-family: $font_helv
+    font-size: 110%
+    color: $dark_grey
+  article
+    height: 3.8em
+    margin: auto auto .5em auto
+    padding: 1.5em
+    padding-bottom: 0
+    margin: 0
+    font-family: $font_helv
+    font-size: 90%
+    color: $dark_grey
+    text-align: center
+    display: block
+    overflow: hidden
+    span 
+      font-weight: normal
+      color: $dark_grey
+  article.viewfull
+    height: auto
+  article.viewlight
+    background: #f3f3f3 !important
+  article:nth-of-type(even)
+    background: #f5f5f5
+    border-bottom: 1px $soft_grey solid
+    border-top: 1px $soft_grey solid
+  article:nth-of-type(odd)
+    background: inherit
+#cvetable
+  margin-bottom: 1em
+  #leyend
+    height: 3em
+    p span
+      text-align: center
+    .risk
+      +box-shadow(none)
+      margin: 0
+      padding: 0
+      font-size: 100%
+      margin-left: -1em
+      margin-right: 3em
+  .risk
+    +onecol
+    +border-radius(100%)
+    +box-shadow(inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333)
+    height: 2em
+    width: 2em
+    margin-top: -.7em
+    padding: .5em 0 0 0
+    font-size: 80%
+    font-weight: bold
+    text-align: center
+  .known
+    +twocol
+  .updated
+    +twocol 
+  .cod
+    +twocol
+    +last
+  .cve-more
+    +eightcol
+    margin: 3em 0
+    text-align: justify
+#swtable
+  margin-bottom: 1em
+  +row
+  .cve_critical
+    +onecol
+  .cve_warning
+    +onecol
+  .sw_name
+    +threecol
+  .version
+    +twocol
+  .details
+    +twocol
+    +last
+    margin-top: -1em
+  .viewFullList
+    +twocol
+    margin-left: 0
+    margin-top: 6em
+  div
+    +box-shadow(inset 0px 0px 0px 1px rgba(#FFF, 0.4), 0 1px 3px #333333)
+    margin-top: 1em
+    margin-bottom: 1em
+    padding-bottom: 1em
+    +sevencol
+    article
+      font-size: 80%
+      border: none
+      background: none
+      padding: .6em 0
+      height: 3.3em
+      p
+        +threecol
+        padding: 1em
+        span.risk 
+          color: $light_grey
+          padding: .4em
+          width: 2em 
+          height: 2em 
+      p+p
+        +fourcol
+      p:last-child
+        +last
+  #leyend
+    height: 3em
+    p span
+      text-align: center
+    .risk
+      +box-shadow(none)
+      margin: 0
+      padding: 0
+      font-size: 100%
+      margin-left: -1em
+      margin-right: 3em
+    .cod
+      margin-left: -1em
+    .sw_id
+      margin-left: -1.5em
+.red
+  background-color: #ee432e
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ee432e), color-stop(50%, #c63929), color-stop(50%, #b51700), color-stop(100%, #891100))
+  background-image: -webkit-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%)
+  background-image: -moz-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%)
+  background-image: -ms-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%)
+  background-image: -o-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%)
+  background-image: linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%)
+  font-weight: bold !important
+  color: #FFF !important
+  border: 1px solid #951100
+  //text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8)
+  +border-radius(100%)
+  +box-shadow(inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333)
+  height: 2em
+  width: 2em
+  padding: .5em 0 0 .5em
+  text-align: center
+.yellow
+  background-color: #fc9200
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffff65), color-stop(50%, #D8D826), color-stop(50%, #f89406), color-stop(100%, #fc9200))
+  background-image: -webkit-linear-gradient(top, #ffff65 0%, #D8D826 50%, #f89406 50%, #fc9200 100%)
+  background-image: -moz-linear-gradient(top, #ffff65 0%, #D8D826 50%, #f89406 50%, #fc9200 100%)
+  background-image: -ms-linear-gradient(top, #ffff65 0%, #D8D826 50%, #f89406 50%, #fc9200 100%)
+  background-image: -o-linear-gradient(top, #ffff65 0%, #D8D826 50%, #f89406 50%, #fc9200 100%)
+  background-image: linear-gradient(top, #ffff65 0%, #D8D826 50%, #f89406 50%, #fc9200 100%)
+  border: 1px solid #a07426
+  color: #fff
+  font-weight: bold !important
+  color: #FFF !important
+  //text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8)
+  +border-radius(100%)
+  +box-shadow(inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333)
+  height: 2em
+  width: 2em
+  padding: .5em 0 0 .5em
+  text-align: center
+.green
+  background-color: #76b347
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #76b347), color-stop(50%, #76b347), color-stop(50%, #5e9e2e), color-stop(100%, #5e9e2e))
+  background-image: -webkit-linear-gradient(top, #76b347 0%, #76b347 50%, #5e9e2e 50%, #5e9e2e 100%)
+  background-image: -moz-linear-gradient(top, #76b347 0%, #76b347 50%, #5e9e2e 50%, #5e9e2e 100%)
+  background-image: -ms-linear-gradient(top, #76b347 0%, #76b347 50%, #5e9e2e 50%, #5e9e2e 100%)
+  background-image: -o-linear-gradient(top, #76b347 0%, #76b347 50%, #5e9e2e 50%, #5e9e2e 100%)
+  background-image: linear-gradient(top, #76b347 0%, #76b347 50%, #5e9e2e 50%, #5e9e2e 100%)
+  border: 1px solid rgb(0, 145, 13)
+  color: #fff
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8)
+button
+  @include clean-gray

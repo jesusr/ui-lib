@@ -1,0 +1,57 @@
+$font_helv: Helvetica, Arial, Verdana, sans-serif
+$dark_blue: rgba(119,166,166,1)
+$light_blue: rgba(184,220,220,1)
+$dark_grey: rgba(29,31,31,1)
+$light_grey: rgba(67,71,71,1)
+$black: #000 
+$soft_grey: rgba(#000,0.1)
+.every_col
+  margin-right: 3.8%
+  float: left
+  min-height: 1px
+@mixin container
+  padding-left: 20px
+  padding-right: 20px
+@mixin row 
+  width: 100%
+  min-width: 755px
+  margin: 0 auto
+  overflow: hidden  
+@mixin onecol
+  @extend .every_col
+  width: 4.85% 
+@mixin twocol 
+  @extend .every_col
+  width: 13.45%
+@mixin threecol
+  @extend .every_col
+  width: 22.05%
+@mixin fourcol
+  @extend .every_col  
+  width: 30.75%
+@mixin fivecol
+  @extend .every_col
+  width: 39.45%
+@mixin sixcol
+  @extend .every_col
+  width: 48%
+@mixin sevencol
+  @extend .every_col
+  width: 56.75%
+@mixin eightcol
+  @extend .every_col
+  width: 65.4%
+@mixin ninecol
+  @extend .every_col
+  width: 74.05%
+@mixin tencol
+  @extend .every_col
+  width: 82.7%
+@mixin elevencol
+  @extend .every_col
+  width: 91.35%
+@mixin twelvecol
+  width: 100% 
+  float: left
+@mixin last
+  margin-right: 0px
