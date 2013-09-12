@@ -1,4 +1,4 @@
 ui-lib
 ======
 
-Some UI libs that i use
+Some UI libs i use on several projects with CoffeeScript and Sass.
