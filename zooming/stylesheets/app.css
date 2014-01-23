@@ -1,0 +1,177 @@
+@import url(http://fonts.googleapis.com/css?family=Text+Me+One);
+@import url(http://fonts.googleapis.com/css?family=Oxygen:300);
+/* line 12, ../sass/app.sass */
+#container {
+  display: block;
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+  min-height: 40em;
+}
+/* line 18, ../sass/app.sass */
+#container ul {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+  clear: both;
+}
+
+/* line 24, ../sass/app.sass */
+ul li.instances, ul li.disk, ul li.memory {
+  margin: 1em;
+  float: left;
+  list-style: none;
+}
+
+/* line 28, ../sass/app.sass */
+.notesite {
+  display: inline-block;
+  position: relative;
+  width: 1em;
+  height: 1em;
+  font-size: 9.4em;
+  cursor: default;
+}
+/* line 35, ../sass/app.sass */
+.notesite:after {
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.1em;
+  left: 0.1em;
+  width: 0.8em;
+  height: 0.8em;
+  background: white;
+  z-index: 1;
+}
+/* line 46, ../sass/app.sass */
+.notesite:before {
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  opacity: 0.5;
+  z-index: 0;
+}
+/* line 55, ../sass/app.sass */
+.notesite > .percent {
+  position: absolute;
+  top: 1.2em;
+  width: 100%;
+  font-size: 5%;
+  text-align: center;
+  z-index: 2;
+  font-size: 18%;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  color: #333333;
+}
+/* line 65, ../sass/app.sass */
+.notesite > .percent span {
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em;
+  text-shadow: 0 0 0.2em #888888;
+  font-family: "Oxygen", sans-serif;
+  display: inline-block;
+  line-height: 0.85em;
+  text-align: center;
+  font-size: 0.8em;
+}
+/* line 73, ../sass/app.sass */
+.notesite > .percent .int {
+  font-size: 180%;
+  font-weight: bold;
+}
+/* line 76, ../sass/app.sass */
+.notesite > .percent .dec {
+  font-size: 100%;
+}
+/* line 78, ../sass/app.sass */
+.notesite > .percent .leyend {
+  font-size: 80%;
+  font-weight: ligth;
+  max-width: 4.5em;
+}
+/* line 82, ../sass/app.sass */
+.notesite > #slice {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  clip: rect(0px, 1em, 0.5em, 0.5em);
+}
+/* line 87, ../sass/app.sass */
+.notesite > #slice > .pie {
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em;
+  box-sizing: content-box;
+  position: absolute;
+  border: 0.51em solid #444444;
+  width: 0.9em;
+  height: 0.9em;
+  clip: rect(0em, 1em, 1em, 0em);
+}
+/* line 95, ../sass/app.sass */
+.notesite > #slice .fill {
+  -moz-transform: rotate(360deg) !important;
+  -webkit-transform: rotate(360deg) !important;
+  -o-transform: rotate(360deg) !important;
+  transform: rotate(360deg) !important;
+  box-shadow: 5em 5em 5em 0.2em #888888;
+}
+
+/* line 101, ../sass/app.sass */
+li.disk .notesite > #slice > .pie {
+  border-color: #df6c4f;
+}
+
+/* line 103, ../sass/app.sass */
+li.instances .notesite > #slice > .pie {
+  border-color: #ecd06f;
+}
+
+/* line 105, ../sass/app.sass */
+li.memory .notesite > #slice > .pie {
+  border-color: #1a99aa;
+}
+
+/* line 107, ../sass/app.sass */
+li.disk .notesite:before {
+  background: #df6c4f;
+}
+
+/* line 109, ../sass/app.sass */
+li.instances .notesite:before {
+  background: #ecd06f;
+}
+
+/* line 111, ../sass/app.sass */
+li.memory .notesite:before {
+  background: #1a99aa;
+}
+
+/* line 114, ../sass/app.sass */
+li.disk .percent .int {
+  width: 100%;
+}
+
+/* line 116, ../sass/app.sass */
+li.instances .percent .int {
+  width: 100%;
+}
